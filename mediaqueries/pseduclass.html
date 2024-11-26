@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button:hover{
+            background-color: aqua;
+
+        }
+        .button:focus{
+            background-color: brown;
+        }
+        .button:active{
+            background-color: blue;
+        }
+        button::before{
+            content: "*";
+            color:aqua;
+        }
+        button::after{
+            content: "#$";
+            color: brown;
+        }
+        h1::selection{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Satya</h1>
+    <Button class="button">Sumbit</Button>
+</body>
+</html>
