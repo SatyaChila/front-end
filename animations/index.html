@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box{
+        height:100px;
+        width: 100px;
+        position: relative;
+        border: 1px;
+        color: aqua;
+        background-color:black;
+        animation: move-box;
+        animation-duration: 2s;
+        border-radius: 5px;
+    }
+    @keyframes move-box{
+        0% { left:0px;}
+        50% {left:100px}
+        100% { left: 200px;}
+    }
+    .rotate{
+        height:100px;
+        width: 100px;
+        position: relative;
+        border: 1px;
+        color: aqua;
+        background-color:black;
+        animation: rotate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        border-radius: 5px;
+    }
+    @keyframes rotate{
+        0% { left:0px;transform: rotate(0deg)}
+        50% {left:100px;transform: rotate(180deg)}
+        100% { left: 200px;transform: rotate(360deg)}
+    }
+    .bounce{
+        height:100px;
+        width: 100px;
+        position: relative;
+        border: 1px;
+        color: aqua;
+        background-color:black;
+        animation: bounce;
+        animation-duration: 2s;
+        border-radius: 5px;
+    }
+    @keyframes bounce{
+        0% {top: 0px; }
+        50% {bottom:100px;}
+        100% {top:0px;}
+    }
+</style>
+</head>
+<body>
+    <!-- <div class="box">satya</div>
+    <div class="rotate">satya</div> -->
+    <div class="bounce">Satya</div>
+</body>
+</html>
