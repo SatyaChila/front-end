@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let frnd={
+            fname:"Satya",
+            lname:"Chila",
+            place:"Hyd"
+        };
+        console.log(frnd.name)
+        console.log(frnd.lname)
+        console.log(frnd.place)
+
+        let name={}
+        name.fname="satya";
+        name.lname="Chila";
+        name.age=25;
+
+        delete name.age;
+        console.log(name);
+        
+        // check properties
+        let check={
+            name:"satya",
+            year:2000
+        }
+
+        function hasprop(obj,key){
+            return key in obj;
+        }
+        console.log(hasprop(check,"name"));
+        console.log(hasprop(check,"year"));
+        console.log(hasprop(check,"age"));
+
+        // loop throug obj properties
+        
+        let student={
+            name:"Satya",
+            age:24,
+            grade:10
+        }
+        for (let key in student) {
+        console.log(`${key}: ${student[key]}`);
+        }
+
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const person={
+    name:'Satya',
+    age:24,
+    greet:function(){
+        console.log(`Hello my name is ${this.name} and age is ${this.age}`);
+    }
+};
+person.greet();
+
+function createBook(title, author){
+    return{
+        title:title,
+        author:author,
+        describe:function(){
+            console.log(`${this.title} by ${this.author}`);
+        }
+    }
+}
+const book1=createBook('2000','Satya');
+const book2=createBook('2000','Ganesh');
+book1.describe();
+book2.describe();
+
+for(let i=0;i<11;i++){
+    console.log(i);
+}
+
+let j=1;
+while(j<11){
+    console.log(j);
+    j++;
+}
+let k=0;
+do{
+    console.log(k);
+    k++;
+}while(k<5);
+let satya={name:"Satya",age:24,city:"Hyd"};
+for(let key in satya){
+    console.log(key+":"+satya[key]);
+}
+
+let arr=[10,20,30];
+for(let value of arr){
+    console.log(value);
+}
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
