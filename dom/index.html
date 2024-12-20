@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name">Satya</h1>
+    <h3 class="intro1">Hello</h3>
+    <h3 class="intro1">Hello</h3>
+    <h3 class="intro3">Hello</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, expedita!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, expedita!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, expedita!</p>
+
+    <div class="selector">Hello</div>
+        <div class="selector">World</div>
+    <script>
+        let element = document.getElementById('name')
+        element.style.backgroundColor='blue'
+
+        let intro = document.getElementsByClassName('intro1')
+        intro[0].style.backgroundColor='green'
+        intro[1].style.backgroundColor='yellow'
+
+        let yup = document.getElementsByClassName('intro3')
+        yup[0].style.backgroundColor='blue'
+
+        let para = document.getElementsByTagName('p')
+        para[0].style.background='aqua'
+        para[1].style.background='red'
+        para[2].style.background='red';
+
+        
+        let select = document.querySelector('selector')
+        select.style.backgroundColor='blue'
+        
+        
+    </script>
+</body>
+</html>

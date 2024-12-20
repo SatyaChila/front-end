@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let f1 = {
+            name:"satya",
+            class:3
+        };
+        let f2 = {
+            name:"ganesh",
+            age:24
+        };
+        let f3 = {
+            ka:"nithin",
+        };
+        let f4 = {
+            __proto__:f3
+        };
+
+        f2.__proto__ =f1
+        f3.__proto__=f2
+        console.log(f2.name);
+        console.log(f2.class);
+        console.log(f3.name);
+        con
+    </script> -->
+
+    <!-- <script>
+        let f1 = {
+            fly() {
+                console.log("Flying");
+            }
+        };
+        let man ={
+            __proto__:f1
+        };
+        man.fly=function(){
+            console.log("bird fly")
+        };
+        man.fly();
+        
+    </script> -->
+    <script>
+        let name1 = {
+            name:"satya",
+            batch:"PFS-10"
+        }
+        let name2 = {
+            name:"ganesh",
+            batch:"PFS-10"
+        }
+        function mind(gree1,gree2) {
+            console.log(this.name+ " is bad boy " + gree1);
+        }
+        mind.call(name1,"how are you","good");
+        mind.apply(name2,["hii"])
+        var mindbind = mind.bind(name1);
+        mindbind("cheen tapak dum dum")
+    </script>
+</body>
+</html>
