@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var carData = [
+            {
+                id: 1,
+                model: "Tata",
+                price: 2000000,
+                year: 2024,
+            },
+            {
+                id: 2,
+                model: "Thar",
+                price: 65465454,
+                year: 2023,
+            },
+            {
+                id: 3,
+                model: "Jaguar",
+                price: 54647621354,
+                year: 2025,
+            }
+        ];
+
+        function fetchCar() {
+            let arr = carData;
+            let ul = document.createElement('ul');
+            carData.forEach(car => {
+                let li = document.createElement('li');
+                li.textContent = `Model: ${car.model}, Price: ${car.price}, Year: ${car.year}`;
+                ul.appendChild(li);
+            });
+            document.body.appendChild(ul);
+        }
+    </script>
+</head>
+<body>
+    <h1>The Models</h1>
+    <button onclick="fetchCar()">Fetch the Car</button>
+</body>
+</html>
